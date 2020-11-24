@@ -1,0 +1,14 @@
+.song-details, .loading-active-song {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-details {
+  img {
+      width: 15rem;
+      border-radius: 50%;
+  }
+}

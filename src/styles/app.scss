@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2b2b2c;
+}
+
+h1,h2,h3,h4 {
+  font-weight: 400;
+}
+
+button {
+  font-family: inherit;
+}
+
+.App {
+  transition: all 0.3s ease;
+}
+
+.App.library-is-showing {
+  margin-left: 0;
+  @media screen and (min-width:768px) {
+    margin-left: 20rem;
+  }
+  @media screen and (min-width:968px) {
+    margin-left: 15rem;
+  }
+}
+
+@import './header';
+@import './song-details';
+@import './player';
+@import './library';
