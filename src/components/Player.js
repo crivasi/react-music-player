@@ -14,7 +14,7 @@ const Player = ({ currentSong, skipTrackHandler }) => {
   useEffect(() => {
     const autoPlaySong = () => {
       if (isPlaying) {
-        // the promise need to be checked before audio plays, else appears an error in the console
+        // the promise needs to be checked before audio plays, else appears an error in the console
         const playPromise = audioRef.current.play();
         if (playPromise !== undefined) {
           playPromise.then(() => {
